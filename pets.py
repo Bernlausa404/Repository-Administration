@@ -6,10 +6,12 @@ class Animal():
         self.__weight = weight
 
     def communication(self):
-        pass
+        print(f"{self.__name()} made a noise")
+
 
     def eat(self,food):
-        pass
+        print(f"{self.__name()} ate food")
+
 
     def get_weight(self):
         return self.__weight
@@ -29,5 +31,14 @@ class Cat(Animal):
     def purr(self):
         pass
 
+class Bird(Animal):
+    def __init__(self, name, age, breed, weight):
+        super().__init__(name, age, breed, weight):
+
+    def squawk(self):
+        pass
+
 cat1= Cat("OMNI", 404, "omnipotent", "omnifinity")
 print(cat1.get_weight())
+
+# I made a bird class and I gave communicate and eat functions yessirrr
