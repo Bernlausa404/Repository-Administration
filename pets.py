@@ -6,11 +6,13 @@ class Animal():
         self.__weight = weight
 
     def communication(self):
-        pass
-
+        print(f"{self.__name()} made a noise")
+# I did this -Yoram
+    
     def eat(self,food):
-        pass
-
+        print(f"{self.__name()} ate food")
+# I did this -Yoram
+    
     def get_weight(self):
         return self.__weight
 
@@ -31,3 +33,5 @@ class Cat(Animal):
 
 cat1= Cat("OMNI", 404, "omnipotent", "omnifinity")
 print(cat1.get_weight())
+
+# You should give functionality to the eat and communicate functions
